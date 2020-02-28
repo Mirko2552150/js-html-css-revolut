@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .clearfix::after {
@@ -12,24 +13,98 @@
 
 header {
     height: 80px;
+    border: 1px solid black;
 }
 
 .container {
+    margin: 0 auto;
     height: 100%;
     max-width: 1200px;
-    background-color: green;
 }
 
 .header-left {
     height: 100%;
     width: 20%;
     float: left;
-    background-color: red;
+    display: flex;
+}
+
+.header-left img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
 }
 
 .header-right {
     height: 100%;
-    width: 60%;
+    width: 50%;
     float: right;
-    background-color: blue;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.menu-item {
+    height: 100%;
+}
+
+.menu-item-first {
+    height: 100%;
+    position: relative;
+}
+
+.menu-item-second {
+    height: 100%;
+    position: relative;
+}
+
+.menu-item-third {
+    height: 100%;
+    position: relative;
+}
+
+.dropdown-menu-first {
+    width: 150px;
+    height: 300px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.dropdown-menu-second {
+    width: 150px;
+    height: 300px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.dropdown-menu-third {
+    width: 150px;
+    height: 300px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.icon::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f107';
+    font-weight: 900;
+    float: right;
+    transition: transform 0.5s;
+    margin-left: 20px;
 }
