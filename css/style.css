@@ -13,7 +13,6 @@
 
 header {
     height: 80px;
-    border: 1px solid black;
 }
 
 .container {
@@ -77,27 +76,55 @@ header {
     width: 150px;
     height: 300px;
     background-color: white;
-    display: none;
     position: absolute;
-    border: 1px solid black;
+    box-shadow: 2px 2px 5px grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    left: -40px;
+    top: 60px;
+
+}
+
+.dropdown-menu-first.visibility {
+    display: none;
 }
 
 .dropdown-menu-second {
     width: 150px;
-    height: 300px;
+    height: 150px;
     background-color: white;
     display: none;
     position: absolute;
-    border: 1px solid black;
+    box-shadow: 2px 2px 5px grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    left: -18px;
+    top: 60px;
+}
+
+.dropdown-menu-second.visibility {
+    display: none;
 }
 
 .dropdown-menu-third {
     width: 150px;
-    height: 300px;
+    height: 150px;
     background-color: white;
-    display: none;
     position: absolute;
-    border: 1px solid black;
+    box-shadow: 2px 2px 5px grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    top: 60px;
+}
+
+.dropdown-menu-third.visibility {
+    display: none;
 }
 
 .icon::after {
