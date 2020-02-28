@@ -123,11 +123,19 @@ header {
     top: 60px;
 }
 
-.dropdown-menu-third.visibility {
+.visibility {
     display: none;
 }
 
-.icon::after {
+.visibility-due {
+    display: none;
+}
+
+.visibility-tre {
+    display: none;
+}
+
+.iconUno::after {
     font-family: "Font Awesome 5 Free";
     content: '\f107';
     font-weight: 900;
@@ -135,3 +143,23 @@ header {
     transition: transform 0.5s;
     margin-left: 20px;
 }
+
+.iconDue::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f107';
+    font-weight: 900;
+    float: right;
+    transition: transform 0.5s;
+    margin-left: 20px;
+}
+
+.iconTre::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f107';
+    font-weight: 900;
+    float: right;
+    transition: transform 0.5s;
+    margin-left: 20px;
+}
+
+/* DA RIVEDERE DOMANI */
