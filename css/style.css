@@ -55,111 +55,59 @@ header {
 
 .menu-item {
     height: 100%;
-}
-
-.menu-item-first {
-    height: 100%;
     position: relative;
 }
 
-.menu-item-second {
-    height: 100%;
-    position: relative;
-}
-
-.menu-item-third {
-    height: 100%;
-    position: relative;
-}
-
-.dropdown-menu-first {
+.dropdown {
     width: 150px;
-    height: 300px;
     background-color: white;
     position: absolute;
     box-shadow: 2px 2px 5px grey;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    top: 60px;
+    border-radius: 5px;
+}
+
+.dropdown-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-first {
     left: -40px;
-    top: 60px;
-
+    justify-content: space-around;
+    height: 300px;
 }
 
-.dropdown-menu-first.visibility {
-    display: none;
-}
-
-.dropdown-menu-second {
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    display: none;
-    position: absolute;
-    box-shadow: 2px 2px 5px grey;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+.menu-second {
     left: -18px;
-    top: 60px;
-}
-
-.dropdown-menu-second.visibility {
-    display: none;
-}
-
-.dropdown-menu-third {
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    position: absolute;
-    box-shadow: 2px 2px 5px grey;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    height: 150px;
+
+}
+
+.menu-third {
     top: 60px;
+    justify-content: flex-start;
+    height: 150px;
 }
 
-.visibility {
+.no-visibility {
     display: none;
 }
 
-.visibility-due {
-    display: none;
-}
-
-.visibility-tre {
-    display: none;
-}
-
-.iconUno::after {
-    font-family: "Font Awesome 5 Free";
-    content: '\f107';
-    font-weight: 900;
+.icon::after {
+    font-family: "Font Awesome 5 Free"; /* OBBLIGATORIO */
+    content: '\f107'; /* NOME ICONA */
+    font-weight: 900; /* OBBLIGATORIO */
     float: right;
     transition: transform 0.5s;
     margin-left: 20px;
 }
 
-.iconDue::after {
-    font-family: "Font Awesome 5 Free";
-    content: '\f107';
-    font-weight: 900;
-    float: right;
-    transition: transform 0.5s;
-    margin-left: 20px;
+.icon.ruota:after {
+    transform: rotate(180deg);
 }
-
-.iconTre::after {
-    font-family: "Font Awesome 5 Free";
-    content: '\f107';
-    font-weight: 900;
-    float: right;
-    transition: transform 0.5s;
-    margin-left: 20px;
-}
-
-/* DA RIVEDERE DOMANI */
