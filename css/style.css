@@ -51,6 +51,12 @@ header {
     text-decoration: none;
     color: black;
     font-weight: 500;
+
+}
+
+.menu-item:hover {
+    border-bottom: 3px solid green;
+
 }
 
 .menu-item {
@@ -63,11 +69,9 @@ header {
     background-color: white;
     position: absolute;
     box-shadow: 2px 2px 5px grey;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     top: 60px;
     border-radius: 5px;
+    display: none;
 }
 
 .dropdown-menu-item {
@@ -91,12 +95,8 @@ header {
 
 .menu-third {
     top: 60px;
-    justify-content: flex-start;
-    height: 150px;
-}
 
-.no-visibility {
-    display: none;
+    height: 150px;
 }
 
 .icon::after {
